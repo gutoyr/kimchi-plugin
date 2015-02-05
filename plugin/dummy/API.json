@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "title": "Dummy Plugin API",
+    "description": "Json schema for Dummy Plugin API",
+    "type": "object",
+    "error": "SPAPI0001E",
+    "properties": {
+        "progresssample_progress": {
+            "type": "null",
+            "error": "SPRET0003E",
+            "properties": {
+            }
+        },
+        "collectionsample_create": {
+            "type": "object",
+            "error": "SPRET0003E",
+            "properties": {
+                "nic": {
+                    "description": "The name of the new interface",
+                    "type": "string",
+                    "required": true,
+                    "error": "SPRET0004E"
+                },
+                "onboot": {
+                    "$ref": "#/definitions/positiveNumber",
+                    "required": true,
+                    "error": "SPRET0005E"
+                },
+                "bootproto": {
+                    "$ref": "#/definitions/positiveNumber",
+                    "required": true,
+                    "error": "SPRET0006E"
+                }
+            }
+        },
+        "resourcesample_start": {
+            "type": "null",
+            "error": "SPRET0003E",
+            "properties": {
+            }
+        },
+        "resourcesample_update": {
+            "type": "object",
+            "error": "SPRET0003E",
+            "properties": {
+                "state": {
+                    "description": "The name of the new interface",
+                    "type": "string",
+                    "required": true,
+                    "error": "SPRET0004E"
+                }
+            }
+        }
+    },
+    "definitions": {
+        "positiveNumber": {
+            "error": "SPAPI0002E",
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true
+        }
+    }
+}
