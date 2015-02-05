@@ -1,2 +1,2 @@
 # kimchi-plugin
-Samples of several types of kimchi plugins
+Backend samples of several types of kimchi plugins
