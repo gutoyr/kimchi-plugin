@@ -5,8 +5,8 @@ import os
 from cherrypy import expose
 
 
-from kimchi.config import PluginPaths
-from kimchi.root import Root
+from backend.config import PluginPaths
+from backend.root import Root
 from plugins.dummy.i18n import messages
 from plugins.dummy.model import DummyModel
 from plugins.dummy.control import ProgressSample

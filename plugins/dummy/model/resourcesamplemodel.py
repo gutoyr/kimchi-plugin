@@ -1,4 +1,4 @@
-from kimchi.exception import InvalidOperation, NotFoundError
+from backend.exception import InvalidOperation, NotFoundError
 from time import sleep
 
 

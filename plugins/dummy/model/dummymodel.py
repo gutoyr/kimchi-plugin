@@ -3,9 +3,9 @@ from collectionsamplemodel import CollectionResourceSampleModel
 from progresssamplemodel import ProgressSampleModel
 from resourcesamplemodel import ResourceSampleModel
 
-from kimchi import config
-from kimchi.basemodel import BaseModel
-from kimchi.objectstore import ObjectStore
+from backend import config
+from backend.basemodel import BaseModel
+from backend.objectstore import ObjectStore
 
 
 class DummyModel(BaseModel):

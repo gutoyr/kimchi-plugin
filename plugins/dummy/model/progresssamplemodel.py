@@ -1,5 +1,5 @@
-from kimchi.model.tasks import TaskModel
-from kimchi.utils import add_task
+from backend.model.tasks import TaskModel
+from backend.utils import add_task
 from time import sleep
 
 
@@ -25,5 +25,5 @@ class DummyProgress(object):
         cb('')
         for i in range(2):
             cb("%s %s" % (self.text, i))
-            sleep(5)
+            sleep(10)
         return cb("Done", True)

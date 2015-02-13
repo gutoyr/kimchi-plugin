@@ -1,4 +1,4 @@
-from kimchi.control.base import Resource
+from backend.control.base import Resource
 
 
 class ResourceSample(Resource):
